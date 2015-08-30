@@ -18,23 +18,33 @@
 	padding-top: 10px;
 }
 
+#sampleImageContainer {
+	float: right;
+	text-align: center;
+	width:450px;
+}
+
 #divider {
 	background-color: #59A4FF;
 	margin-bottom: 20px;
 	height: 4px;
-	max-width: 800px;
-	min-width: 600px;
+	/*max-width: 800px;
+	min-width: 600px;*/
 }
 
 #container {
 	position: relative;
-	max-width: 800px;
-	min-width: 600px;
+	width: 800px;
 	padding: 0 20px 0 22px;
 	margin: 0 auto;
+	/*max-width: 800px;
+	min-width: 600px;*/
 }
 
 #contentContainter {
 	width: 100%;
 }
 
+#infoText {
+	width: 280px;
+}
