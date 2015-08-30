@@ -1,9 +1,6 @@
 #pageHeader {
-	height: 145px;
-	
-}
 
-#pageHeader h1 {
+	
 }
 
 #title {
@@ -16,6 +13,33 @@
 
 #titleIcon {
 	padding-top: 10px;
+}
+
+#navContainer {
+
+}
+
+#navContainer ul {
+	list-style: none;
+	padding-left: 0;
+	position: relative;
+
+}
+
+#navContainer li {
+	position: relative;
+	display: inline;
+}
+
+#navContainer a {
+	color: black;
+	padding: 6px 15px 8px;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+#navContainer a:hover{
+	color: #59A4FF;
 }
 
 #sampleImageContainer {
@@ -45,6 +69,20 @@
 	width: 100%;
 }
 
-#infoText {
-	width: 280px;
+#introText {
+	width: 38%;
+}
+
+#introText h4 {
+	margin-top: 20px;
+}
+
+#leftColumn {
+	width: 48%;
+	display: inline-block;
+}
+
+#rightColumn {
+	width: 48%;
+	float: right;
 }
