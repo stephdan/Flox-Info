@@ -8,7 +8,6 @@
 	width: 800px;
 	padding: 0 20px 0 22px;
 	margin: 0 auto;
-
 }
 
 #titleIcon {
@@ -77,6 +76,11 @@
 	margin-top: 20px;
 }
 
+/* Manual page stuff */
+#manualText h4 {
+	margin-top: 20px;
+}
+
 #leftColumn {
 	width: 48%;
 	display: inline-block;
@@ -86,3 +90,10 @@
 	width: 48%;
 	float: right;
 }
+
+.toolbarIcon {
+	float: left;
+	margin-right: 4px;
+}
+
+
