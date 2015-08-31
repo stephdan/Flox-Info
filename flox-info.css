@@ -103,3 +103,7 @@
 #layoutSettingsText h4 {
 
 }
+
+.arrowImage {
+	display: inline-block;
+}
