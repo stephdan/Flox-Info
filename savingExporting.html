@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flox</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="flox-info.css">
+    
+</head>
+
+<body>
+
+	<div id="pageHeader">
+		<div id="title">
+			<img id="titleIcon" src="titleArrow.png">
+			<div id="navContainer">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="screenshots.html">Screenshots</a></li>
+					<li><a href="manual.html" style="color:#59A4FF;">Manual</a></li>
+				</ul>
+			</div>
+			<div id="divider"></div>
+		</div>
+	</div>
+		
+	
+	<div id="container">
+		
+		<div id="contentContainer">
+
+			<h3>Saving and Exporting Data</h3>
+
+			<p>There are several options for saving and exporting map data.</p>
+
+			<br>
+
+			<p><b>Save Settings: </b>Saves the current application settings and flow data into an XML file that can be reopened using File>Open Settings.</p>
+
+			<p><b>Export SVG: </b>Exports all flow and shapefile data into an SVG file, which is openable by vector editing software like Adobe Illustrator, as well as most web browsers.</p>
+
+			<p><b>Export CSV: </b>Exports the flow data into a Comma Separated Value text file. This is useful for importing the data into table editing software like Microsoft Excel. Does not include shapefile data.</p>
+
+			<p><b>Export Image: </b>Exports a png image of the currently visible map area. When selected, a menu will pop up where you can change the length of the longest side of the image in pixels, allowing you to resize the image. The default value is the current size of the map window.</p>
+
+			<br>
+
+			<h3>Importing Data</h3>
+
+			<p>Flox can import specific types and formats of data.</p>
+
+			<br>
+
+			<p><b>Open Flows: </b>Opens a dialog for importing flow data from a Comma Separated Value (CSV) file. The CSV needs to be formatted in a specific way for Flox to be able to read it. It must include five columns with 3 additional optional columns in the following order without headers:</p>
+
+			<ul>
+				<li>Start point x coordinate</li>
+				<li>Start point y coordinate</li>
+				<li>End point x coordinate</li>
+				<li>End point y coordinate</li>
+				<li>Flow value</li>
+			</ul>
+			<em>Optional Columns</em>
+			<ul>
+				<li>Control point x coordinate</li>
+				<li>Control point y coordinate</li>
+				<li>Lock status (0 = unlocked, 1 = locked)</li>
+			</ul>
+
+			<br>
+
+			<p><b>Open Nodes and Flows: </b>Opens a dialog for importing flow data from two Comma Separated Value (CSV) files, one containing node coordinates and the other containing the connectivity between those nodes. The dialog includes two buttons for browsing to your data.</p>
+
+			<ul style="list-style: none;">
+				<li>Nodes File: This file should be a CSV with 3 columns in the following order without headers:</li>
+					<ul>
+						<li>Node ID (can be numbers or letters)</li>
+						<li>X coordinate</li>
+						<li>Y coordinate</li>
+					</ul>
+				<br>
+				<li>Flows File: This file should be a CSV file with 3 columns in the following order without headers:</li>
+					<ul>
+						<li>Start Node ID (should match a node in the Nodes File)</li>
+						<li>End Node ID (should match a node in the Nodes File)</li>
+						<li>Flow Value (a number)</li>
+					</ul>
+			</ul>
+
+			<br>
+
+			<p><b>Open Settings: </b>Opens the settings XML file that is produced by the Save Settings option.</p>
+
+			<br>
+
+			<p><b>Open Shapefile: </b>Adds an Esri shapefile point or polygon layer to the map. When browsing to the location of the shapefile, select the file with the .shp extension.</p>
+
+
+		</div>
+	</div>
+		
+
+
+	<div id="footerContainer"></div>
+
+
+</body>
+</html>
+

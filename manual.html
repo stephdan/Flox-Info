@@ -51,16 +51,13 @@
 					</ul>
 
 
-					<h4>Data Import and Export</h4>
+					<h4>Data Management</h4>
 
-					<p>Access data importing/exporting options by clicking the File menu item at the top left of the window.</p>
+					<p>Clicking the File menu at the top left of the window provides options for saving, importing, and exporting data.</p>
 
 					<ul>
-						<li><a href="">Open Flows</a></li>
-						<li><a href="">Open Nodes and Flows</a></li>
-						<li><a href="">Open/Save Settings</a></li>
-						<li><a href="">Add Shapefile Layer</a></li>
-						<li><a href="">Export SVG, CSV, Image</a></li>
+						<li><a href="savingExporting.html">Saving/Importing/Exporting Data</a></li>
+
 					</ul>
 
 				</div>
@@ -68,34 +65,42 @@
 				<div id="rightColumn">
 					<h4>Toolbar</h4>
 
-					<p>The toolbar at the top of the window can be used to edit flows and navigate the map.</p>
+					<p>The toolbar at the top of the window can be used to edit flows and navigate the map. Some of the functionality of the toolbar is also available in the menu items (such as selecting and deleting flows).</p>
 
 
 					<img class="toolbarIcon" src="icons/Arrow16X16.gif">
-					<p>Select/Move Tool, used for selecting and moving map features.</p>
+					<p><b>Select/Move Tool: </b>Used for selecting and moving map features. With this tool active, click a flow or node to select it, or click and drag an empty space to select features by rectangle. Selected nodes can be dragged to any location on the map. A selected flow will display the location of its control point, which can then be dragged to a new location to manually adjust the curve of the flow. </p>
+
+					<p>Flows will automaticaly lock once they are manually adjusted. Selected flows and nodes can be deleted with the delete key </p>
 
 					<img class="toolbarIcon" src="icons/SetPoint16x16.gif">
-					<p>Add Flow Tool, used for adding new flows to the map.</p>
+					<p><b>Add Flow Tool: </b>Used for adding new flows to the map. With this tool active, click on an existing node or an empty space to select/create a start point, and then click another existing node or empty space to select/create an end point. A flow will be drawn connecting the two points. </p>
 
 					<img class="toolbarIcon" src="icons/Locked16x16.gif">
 					<img class="toolbarIcon" src="icons/Unlocked16x16.gif">
 					<img class="toolbarIcon" src="icons/LockedUnlocked16x16.gif">
-					<p>Button for locking/unlocking selected flows (icon changes based on the status of the currently selected flow).</p>
+					<p><b>Lock/Unlock button: </b>Locks or unlocks selected flows. The icon changes based on the status of the currently selected flow(s)). Locked flows retain their current shape when making adjustments to the layout settings.</p>
 
 					<img class="toolbarIcon" src="icons/ZoomIn16x16.gif">
 					<img class="toolbarIcon" src="icons/ZoomOut16x16.gif">
 					<img class="toolbarIcon" src="icons/Hand16x16.gif">
-					<p>Tools for zooming and panning around the map.</p>
+					<p><b>Zoom and Pan Tools: </b>Used for map navigation.</p>
 
 					<img class="toolbarIcon" src="icons/ShowAll20x14.png">
-					<p>Adjusts the zoom level to show all loaded data sets.</p>
+					<p><b>Show All: </b>Adjusts the zoom level to show all loaded data sets.</p>
 
 					<img class="toolbarIcon" src="icons/Ruler16x16.gif">
-					<p>Measures distances.</p>
+					<p><b>Measure Tool: </b>With this tool active, click and drag the map to measure map distances.</p>
+
+					<h4>Additional Flow Editing Options</h4>
 
 
+					<p><b>Editable Text Boxes: </b>The top of the window has 3 editable text boxes that display the value and x/y coordinates of any selected feature. These attributes can be edited by entering new values into these boxes while a feature is selected.</p>
+					<p>The X and Y boxes will be blank and uneditable if a flow or more than one node is selected. However, the Value box may still be edited while multiple features of any type are selected, and the new value will be attributed to all selected features.</p>
 
-					<h4>Editing Flows</h4>
+					<p><b>Menu Bar: </b>Some of the map editing and navigation functionality is available in the menu bar at the top of the window, as well as some options that are not available elsewhere.</p>
+
+
 				</div>
 			</div>
 			
