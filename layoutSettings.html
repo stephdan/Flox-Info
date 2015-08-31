@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flox Layout</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="flox-info.css">
+    
+</head>
+
+<body>
+
+	<div id="pageHeader">
+		<div id="title">
+			<img id="titleIcon" src="titleArrow.png">
+			<div id="navContainer">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="screenshots.html">Screenshots</a></li>
+					<li><a href="manual.html" style="color:#59A4FF;">Manual</a></li>
+				</ul>
+			</div>
+			<div id="divider"></div>
+		</div>
+	</div>
+		
+	
+	<div id="container">
+		
+		<div id="contentContainer">
+
+			<h3>Layout Settings</h3>
+
+			<p>These settings adjust the way flows are layed out on the map.</p>
+
+			<div id="leftColumn">
+				<p><b>Stiffness of Longest Flow: </b>Controls the stiffness of relatively long flows. Lower settings allow longer flows to bend more.</p>
+
+				<p><b>Stiffness of Zero-Length Flow: </b>Controls the stiffness of relatively short flows. Lower settings allow short flows to bend more.</p>
+
+				<p><b>Weight Exponent: </b>Controls the amount of influence distant features have on each other. The higher the setting, the closer together features must be to influence each other.</p>
+
+				<p><b>Repulsion of Start and End Nodes: </b>Controls the strength with which start and end nodes repel flow lines. The higher the setting, the stronger the repelling force.</p>
+			</div>
+
+			<div id="rightColumn">
+				<p><b>Anti-Torsion Forces: </b>Controls the degree to which flows are permitted to be asymmetrical. The higher the setting, the more semetrical flows will be.</p>
+
+				<p><b>Stiffness Factor for Peripheral Flows: </b>The lower the setting, the more flows lying towards the outside of the layout are permitted to bend.</p>
+
+				<p><b>Canvas Size: </b> Adjusts the side of the canvas. Flows cannot lie outside the canvas border. Click the eye icon to see the canvas.</p>
+
+				<p><b>Flow Rangebox Size: </b>Controls the maximum bend of flows. Click the eye icon to see the rangebox of selected flows. Uncheck the checkbox to remove rangebox restrictions. <em>Note: </em>Removing rangebox restrictions often results in poor flow layouts.</p>
+			</div>
+
+
+		<div id="settingsLinks">Settings: 
+			<a href="layoutSettings.html">Layout</a> | 
+			<a href="mapSettings.html">Map</a> | 
+			<a href="arrowSettings.html">Arrows</a> | 
+			<a href="clippingSettings.html">Clipping</a>
+		</div>
+			
+		</div>
+	</div>
+		
+
+	
+
+	<div id="footerContainer"></div>
+
+
+</body>
+</html>
+
