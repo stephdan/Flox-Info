@@ -56,10 +56,22 @@
 	min-width: 600px;*/
 }
 
+.screenshotDivider {
+	background-color: lightgray;
+	height: 1px;
+	margin-top: 25px;
+	margin-bottom: 30px;
+}
+
 #sampleImageContainer {
 	float: right;
 	text-align: center;
 	width: 55%;
+}
+
+#screenshotsContainer {
+	text-align: center;
+	width: 100%;
 }
 
 #container {
